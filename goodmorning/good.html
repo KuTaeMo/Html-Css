@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1>Good Morning</h1>
+        <div class="nav-head">
+            <div class="s-title sub-title">What are you eating today?</div>
+            <div class="nav-head-in">
+                <div><a href="#">🔍</a></div>
+                <div><a href="#">🙍‍♂️</a></div>
+            </div>
+        </div>
+        </nav>
+    <main>
+        <section class="main-sec">
+            <div class="main-img-box"><img src="image/main.jpg"/></div>
+            <div class="main-letter-box">
+                <div class="l-title box-mt">Oatmeal cookie</div>
+                <div class="s-title box-st">Vegan 10 minutes 3 people</div>
+                <hr class="line"/>
+                <div class="star-box">
+                    <div>4.3 ☆</div>
+                    <div>94 📢</div>
+                    <div class="add">
+                        <div id="numberBox">0 </div><button onclick="add()">👍</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Recommended</h2>
+            <br/>
+            <div class="sub-box">
+                <div class="sub-inf-box">
+                    <div class="sub-img-box"><img src="image/sub.jpg"/></div>
+                    <div class="sub-l-title">Pomegranade Juice</div>
+                    <div class="sub-s-title">Something i can't read</div>
+                </div>
+                <div class="sub-inf-box">
+                    <div class="sub-img-box"><img src="image/sub.jpg"/></div>
+                    <div class="sub-l-title">Pomegranade Juice</div>
+                    <div class="sub-s-title">Something i can't read</div>
+                </div>
+                <div class="sub-inf-box">
+                    <div class="sub-img-box"><img src="image/sub.jpg"/></div>
+                    <div class="sub-l-title">Pomegranade Juice</div>
+                    <div class="sub-s-title">Something i can't read</div>
+                </div>
+                <div class="sub-inf-box">
+                    <div class="sub-img-box"><img src="image/sub.jpg"/></div>
+                    <div class="sub-l-title">Pomegranade Juice</div>
+                    <div class="sub-s-title">Something i can't read</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        var num=0;
+
+        function add(){
+            num=num+1;
+
+            var numberBox=document.querySelector("#numberBox");
+
+            numberBox.innerHTML=num;
+        }
+    </script>
+</body>
+</html>

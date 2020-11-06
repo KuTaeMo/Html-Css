@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <title>에어비앤비</title>
+        <style>
+            header{
+                background-image: url("image/background.jpg");
+                height: 880px;
+                width: 100%;
+            }
+            nav{
+                display: flex;
+            }
+            .nav__logo{
+                width: 70%;
+            }
+            .nav__menu{
+                display: flex;
+                justify-content: space-evenly;
+                width: 30%;
+            }
+            .m-title{
+                font-size: 15px;
+                font-weight: 700;
+                color: white;
+            }
+            .form-title{
+                width: 300px;
+                font-size:30px;
+                font-weight: 800;
+            }
+            .search-form{
+                background-color: white;
+                display: inline-block;
+                border: 1px solid white;
+                border-radius: 10px;
+                margin-top: 100px;
+                margin-left: 100px;
+                padding: 15px;
+            }
+            .button1{
+                background-color:palevioletred;
+                width: 50px;
+                height: 30px;
+                border-radius: 10px;
+                color: white;
+                border: 0px;
+                font-weight: 700;
+                outline: 0px;
+            }
+            .button1:hover{
+                background-color: purple;
+                outline: 0px;
+                cursor: pointer;
+            }
+            .button1:active{
+                background-color: purple;
+                outline: 0px;
+            }
+            .button-align{
+                margin: 10px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            main{
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .l-title{
+                font-size: 25px;
+                font-weight: 700;
+            }
+            table{
+                border-collapse: separate;
+                border-spacing: 0 10px;
+            }
+            .inp{
+                height: 30px;
+                width: 100%;
+                margin: 5px;
+            }
+            .card-selection1{
+                display: flex;
+            }
+            .card-in{
+                display: flex;
+                border: 1px solid black;
+                border-radius: 6px;
+                margin-right: 10px;
+                height: 55px;
+                width: 25%;
+                align-items: center;
+            }
+            .card-name{
+                margin-left: 10px;
+            }
+            .image-selection1{
+                display: flex;
+                justify-content: space-between;
+            }
+            .s-title{
+                font-size: 8px;
+                font-weight: 600;
+                color: gray;
+            }
+            .xs-title{
+                font-size: 6px;
+                font-weight: 600;
+                color: gray;
+            }
+            .ms-title{
+                font-size: 15px;
+                font-weight: 700;
+                color: black;
+                width: 200px;
+            }
+            /* span{
+                vertical-align: center;
+            } */
+            .home-box{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 10px;
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 헤더 높이 880 -->
+        <header>
+            <nav>
+                <div class="nav__logo"><img src="image/mark.png" width=50px; height=50px;/></div>
+                <div class="nav__menu">
+                    <div class="m-title">호스트가 되어보세요</div>
+                    <div class="m-title">도움말</div>
+                    <div class="m-title">회원가입</div>
+                    <div class="m-title">로그인</div>
+                </div>
+            </nav>
+            <section>
+                <div class="search-form">
+                    <div class="form-title">특색있는 숙소와 즐길 거리를 예약하세요.</div>
+                    <br/>
+                    <table style="text-align:left;">
+                        <tr>
+                            <th>목적지</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input class="inp" type="text" placeholder="모든 위치"></td>
+                        </tr>
+                        <tr>
+                            <th>체크인</th>
+                            <th>체크아웃</th>
+                        </tr>
+                        <tr>
+                            <td><input class="inp" type="text" placeholder="연도-월-일"></td>
+                            <td><input class="inp" type="text" placeholder="연도-월-일"></td>
+                        </tr>
+                        <tr>
+                            <th>인원</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input class="inp" type="text" placeholder="인원"></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <div class="button-align">
+                        <button class="button1">검색</button>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <!-- 첫번째 섹션 -->
+            <section>
+                <br/>
+                <div class="l-title">에어비앤비 둘러보기</div>
+                <br/>
+                <div class="card-selection1">
+                    <div class="card-in">
+                        <div><img src="image/card1.jpg" width="70px" height="50px"/></div>
+                        <div class="card-name">숙소 및 부티크 호텔</div>
+                    </div>
+                    <div class="card-in">
+                        <div><img src="image/card2.jpg" width="70px" height="50px"/></div>
+                        <div>트립</div>
+                    </div>
+                    <div class="card-in">
+                        <div><img src="image/card3.jpg" width="70px" height="50px"/></div>
+                        <div>어드벤처</div>
+                    </div>
+                    <div class="card-in">
+                        <div><img src="image/card4.jpg" width="70px" height="50px"/></div>
+                        <div>레스토랑</div>
+                    </div>
+                </div>
+            </section>
+
+            <br/>
+            <!-- 두번째 섹션 -->
+            <section>
+                <div><img src="image/ad1.jpg" width="100%" style="border-radius: 30px;"/></div>
+            </section>
+
+            <br/><br/>
+
+            <!-- 세번째 섹션 -->
+            <section>
+                <div class="l-title">추천 여행지</div>
+                <br/>
+
+                <div class="image-selection1">
+                    <div><img src="image/choo1.png"/></div>
+                    <div><img src="image/choo2.png"/></div>
+                    <div><img src="image/choo3.png"/></div>
+                    <div><img src="image/choo4.png"/></div>
+                    <div><img src="image/choo5.png"/></div>
+                </div>
+            </section>
+            <br/>
+
+            <!-- 네번째 섹션 -->
+            <section>
+                <div class="l-title">에어비앤비 플렉스를 만나보세요!</div>
+                <div class="s-title">퀄리티와 인테리어 디자인이 검증된 숙소 셀렉션</div>
+                <div><img src="image/ad2.png" width="100%" style="margin-top: 15px;"/></div>
+            </section>
+            <br/><br/>
+
+            <!-- 다섯번째 섹션 -->
+            <section>
+                <div class="l-title">전 세계 숙소</div>
+                <br/>
+                <!-- 그리드 레이아웃 쓰기 -->
+                <div class="home-box">
+                    <!-- home1 -->
+                    <div class="home-item">
+                        <div><img src="image/home1.png"/></div>
+                        <div class="xs-title">오두막 * BALIAN BEACH, BALI</div>
+                        <div class="ms-title">BALIAN TREEHOUSE w beautiful pool</div>
+                        <div>
+                            <!-- 별 그리기 -->
+                            <span>  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            </span>
+                            <span class="ms-title">185</span>
+                            <span class="ms-title">슈퍼호스트</span>
+                        </div>
+                    </div>
+                    <!-- home2 -->
+                    <div class="home-item">
+                        <div><img src="image/home2.png"/></div>
+                        <div class="xs-title">키클라데스 주택 이아(OIA)</div>
+                        <div class="ms-title">Unique Architecture Cave House</div>
+                        <div>
+                            <!-- 별 그리기 -->
+                            <span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            </span>
+                            <span class="ms-title">188</span>
+                            <span class="ms-title">슈퍼호스트</span>
+                        </div>
+                    </div>
+                    <!-- home3 -->
+                    <div class="home-item">
+                        <div><img src="image/home3.png"/></div>
+                        <div class="xs-title">성 트웬티나인 팜스(TWENTYNINE PALMS)</div>
+                        <div class="ms-title">Tile House</div>
+                        <div>
+                            <!-- 별 그리기 -->
+                            <span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z"/></svg>
+                            </span>
+                            <span class="ms-title">185</span>
+                            <span class="ms-title">슈퍼호스트</span>
+                        </div>
+                    </div>
+                    <!-- home4 -->
+                    <div class="home-item">
+                        <div><img src="image/home4.png"/></div>
+                        <div class="xs-title">검증됨 케이프타운</div>
+                        <div class="ms-title">Modern, Chic Penthhouse with Mountain, City & Sea Views</div>
+                        <div>
+                            <!-- 별 그리기 -->
+                            <span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            </span>
+                            <span class="ms-title">177</span>
+                            <span class="ms-title">슈퍼호스트</span>
+                        </div>
+                    </div>
+                    <!-- home5 -->
+                    <div class="home-item">
+                        <div><img src="image/home5.png"/></div>
+                        <div class="xs-title">아파트 전체 마드리드(MARDRID)</div>
+                        <div class="ms-title">솔광장에 위치한 개인 스튜디오</div>
+                        <div>
+                            <!-- 별 그리기 -->
+                            <span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            </span>
+                            <span class="ms-title">459</span>
+                            <span class="ms-title">슈퍼호스트</span>
+                        </div>
+                    </div>
+                    <!-- home6 -->
+                    <div class="home-item">
+                        <div><img src="image/home6.png"/></div>
+                        <div class="xs-title">집 전체 HUMAC</div>
+                        <div class="ms-title">Vacation house in etno-eco vilage Humac</div>
+                        <div>
+                            <!-- 별 그리기 -->
+                            <span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z"/></svg>
+                            </span>
+                            <span class="ms-title">119</span>
+                            <span class="ms-title">슈퍼호스트</span>
+                        </div>
+                    </div>
+                    <!-- home7 -->
+                    <div class="home-item">
+                        <div><img src="image/home7.png"/></div>
+                        <div class="xs-title">개인실 마라케시</div>
+                        <div class="ms-title">The Cozy Palace</div>
+                        <div>
+                            <!-- 별 그리기 -->
+                            <span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            </span>
+                            <span class="ms-title">559</span>
+                            <span class="ms-title">슈퍼호스트</span>
+                        </div>
+                    </div>
+                    <!-- home8 -->
+                    <div class="home-item">
+                        <div><img src="image/home8.png"/></div>
+                        <div class="xs-title">게스트용 별채 전체 로스엔젤로스</div>
+                        <div class="ms-title">Private Pool House with Amazing Views!</div>
+                        <div>
+                            <!-- 별 그리기 -->
+                            <span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            </span>
+                            <span class="ms-title">170</span>
+                            <span class="ms-title">슈퍼호스트</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

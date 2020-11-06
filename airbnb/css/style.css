@@ -1,0 +1,5 @@
+*{  /* 전역으로 거는 거 */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
