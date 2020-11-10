@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+</head>
+
+<body>
+    <section class="navi">
+        <div class="logo">
+            <div><a href="home.html"><img src="image/instalogo.jpg" style="width: 150px;" height="auto" /></a></div>
+            <div class="search-box">
+                <input type="text" class="search" placeholder="🔍 Search">
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="home.html">🏠</a></li>
+                <li><a href="explore.html">🧭</a></li>
+                <li class="submenu">
+                    <a href="#">♡</a>
+                    <div class="dropdown">
+                        <div class="ref-letter"><b>Eagle</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
+                        <div class="ref-letter"><b>Owl</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
+                        <div class="ref-letter"><b>Crow</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
+                </li>
+                <li><a href="mypage.html"><img src="image/duck.jfif" style="width: 25px;;" height="25px" /></a></li>
+            </ul>
+        </div>
+    </section>
+    <hr class="line" />
+    <br />
+    <section class="explore-image">
+        <div class="ex-box1">
+            <img id="img1" src="image/image.jfif" />
+            <div class="ex-box1-in" id="box1">
+                <div>❤</div>
+                <div>250</div>
+            </div>
+        </div>
+        <div class="ex-box1">
+            <img id="img2" src="image/image2.jfif" />
+            <div class="ex-box1-in" id="box2">
+                <div>❤</div>
+                <div>112</div>
+            </div>
+        </div>
+        <div class="ex-box1">
+            <img id="img3" src="image/image3.jfif" />
+            <div class="ex-box1-in" id="box3">
+                <div>❤</div>
+                <div>462</div>
+            </div>
+        </div>
+        <div><img id="img4" src="image/image4.jfif" /></div>
+        <div><img id="img5" src="image/image5.jfif" /></div>
+        <div><img id="img6" src="image/image6.jfif" /></div>
+        <div><img id="img7" src="image/image.jfif" /></div>
+        <div><img id="img8" src="image/image2.jfif" /></div>
+        <div><img id="img9" src="image/image3.jfif" /></div>
+        <div><img id="img10" src="image/image4.jfif" /></div>
+        <div><img id="img11" src="image/image5.jfif" /></div>
+        <div><img id="img12" src="image/image6.jfif" /></div>
+    </section>
+</body>
+
+<script>
+    $("#img1").mouseover(function () {
+        $("#img1").fadeTo("slow", 0.3);
+        $("#box1").show();
+    });
+    $("#img1").mouseleave(function () {
+        $("#img1").fadeTo(1000, 1);
+        $("#box1").hide();
+    });
+    $("#img2").mouseover(function () {
+        $("#img2").fadeTo("slow", 0.3);
+        $("#box2").show();
+    });
+    $("#img2").mouseleave(function () {
+        $("#img2").fadeTo(1000, 1);
+        $("#box2").hide();
+    });
+    $("#img3").mouseover(function () {
+        $("#img3").fadeTo("slow", 0.3);
+        $("#box3").show();
+    });
+    $("#img3").mouseleave(function () {
+        $("#img3").fadeTo(1000, 1);
+        $("#box3").hide();
+    });
+
+</script>
+
+</html>

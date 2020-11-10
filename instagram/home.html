@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <section class="navi">
+        <div class="logo">
+            <div><a href="home.html"><img src="image/instalogo.jpg" style="width: 150px;" height="auto" /></a></div>
+            <div class="search-box">
+                <input type="text" class="search" placeholder="🔍 Search">
+            </div>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="home.html">🏠</a></li>
+                <li><a href="explore.html">🧭</a></li>
+                <li class="submenu">
+                    <a href="#">♡</a>
+                    <div class="dropdown">
+                        <div class="ref-letter"><b>Eagle</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
+                        <div class="ref-letter"><b>Owl</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
+                        <div class="ref-letter"><b>Crow</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
+                </li>
+                <li><a href="mypage.html"><img src="image/duck.jfif" style="width: 25px;;" height="25px" /></a></li>
+            </ul>
+        </div>
+    </section>
+    <hr class="line" />
+    <div class="story">
+        <div class="story-box">
+            <div class="story-img" id="story1"><a href="#"><img src="image/image.jfif" /></a></div>
+            <div class="story-letter">IMAGE1</div>
+            <div class="pop-image1">
+                <img src="image/image.jfif" />
+            </div>
+        </div>
+        <div class="story-box">
+            <div class="story-img" id="story2"><a href="#"><img src="image/image2.jfif" /></a></div>
+            <div class="story-letter">IMAGE2</div>
+            <div class="pop-image2">
+                <img src="image/image2.jfif" />
+            </div>
+        </div>
+        <div class="story-box">
+            <div class="story-img" id="story3"><a href="#"><img src="image/image3.jfif" /></a></div>
+            <div class="story-letter">IMAGE3</div>
+            <div class="pop-image3">
+                <img src="image/image3.jfif" />
+            </div>
+        </div>
+        <div class="story-box">
+            <div class="story-img" id="story4"><a href="#"><img src="image/image4.jfif" /></a></div>
+            <div class="story-letter">IMAGE4</div>
+            <div class="pop-image3">
+                <img src="image/image4.jfif" />
+            </div>
+        </div>
+        <div class="story-box">
+            <div class="story-img" id="story5"><a href="#"><img src="image/image5.jfif" /></a></div>
+            <div class="story-letter">IMAGE5</div>
+            <div class="pop-image4">
+                <img src="image/image5.jfif" />
+            </div>
+        </div>
+    </div>
+
+    <hr class="line" />
+
+    <main>
+        <div class="article-box">
+            <div class="image-inf">
+                <div class="image-inf-left">
+                    <div class="duck-pick"><img src="image/duck.jfif" style="width: 25px;;" height="25px" /></div>
+                    <div class="name">Duck</div>
+                </div>
+                <div class="setting">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">˚˚˚</button>
+                    <!-- 모달 -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div><a href="#">신고...</a></div>
+                                    <div><a href="#">게시물 알림 설정</a></div>
+                                    <div><a href="#">링크 복사</a></div>
+                                    <div><a href="#">공유하기...</a></div>
+                                    <div><a href="#">팔로우 취소</a></div>
+                                    <div><a href="#">숨기기</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="image/image.jfif" style="width: 100%;" height="auto" />
+            </div>
+            <div class="sns">
+                <div class="emo">
+                    <div class="emo-left">
+                        <div class="emoti">❤</div>
+                        <div class="emoti">📢</div>
+                        <div class="emoti">✈</div>
+                    </div>
+                    <div class="emo-right">
+                        <div class="emoti">📖</div>
+                    </div>
+                </div>
+                <div class="how-likes letter">395,474 likes</div>
+                <div class="comment-table">
+                    <div class="nick-name">Eagle</div>
+                    <div class="comment">Good!</div>
+                </div>
+                <div><input class="input-box" type="text" placeholder="댓글을 입력하세요."><button
+                        class="btn btn-primary btn-sm">등록</button>
+                </div>
+                <div class="date">1 DAY AGO</div>
+            </div>
+        </div>
+        <!-- 두번째 사진 -->
+        <br />
+        <div class="article-box">
+            <div class="image-inf">
+                <div class="image-inf-left">
+                    <div class="duck-pick"><img src="image/duck.jfif" style="width: 25px;;" height="25px" /></div>
+                    <div class="name">Duck</div>
+                </div>
+                <div class="setting">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">˚˚˚</button>
+                    <!-- 모달 -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <div><a href="#">신고...</a></div>
+                                    <div><a href="#">게시물 알림 설정</a></div>
+                                    <div><a href="#">링크 복사</a></div>
+                                    <div><a href="#">공유하기...</a></div>
+                                    <div><a href="#">팔로우 취소</a></div>
+                                    <div><a href="#">숨기기</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="image/image.jfif" style="width: 100%;" height="auto" />
+            </div>
+            <div class="sns">
+                <div class="emo">
+                    <div class="emo-left">
+                        <div class="emoti">❤</div>
+                        <div class="emoti">📢</div>
+                        <div class="emoti">✈</div>
+                    </div>
+                    <div class="emo-right">
+                        <div class="emoti">📖</div>
+                    </div>
+                </div>
+                <div class="how-likes letter">395,474 likes</div>
+                <div class="comment-table">
+                    <div class="nick-name">Eagle</div>
+                    <div class="comment">Good!</div>
+                </div>
+                <div><input class="input-box" type="text" placeholder="댓글을 입력하세요."><button
+                        class="btn btn-primary btn-sm">등록</button></div>
+                <div class="date">1 DAY AGO</div>
+            </div>
+        </div>
+    </main>
+    <div class="backLayer" style=""> </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        // 배경 조절 버튼 클릭시 클릭 이벤트
+        $("#story1").click(function () {
+            var width = $(window).width();
+            var height = $(window).height();
+
+            //화면을 가리는 레이어의 사이즈 조정
+            $(".backLayer").width(width);
+            $(".backLayer").height(height);
+
+            //화면을 가리는 레이어를 보여준다 (0.5초동안 30%의 농도의 투명도)
+            $(".backLayer").fadeTo(500, 0.4);
+
+            //팝업 레이어 보이게
+            var loadingDivObj = $(".pop-image1");
+            loadingDivObj.css("top", $(document).height() / 2 - 500);
+            loadingDivObj.css("left", $(document).width() / 2 - $(document).width() / 20);
+            loadingDivObj.fadeIn(500);
+        });
+
+    });
+
+    //esc키 누르면 화면 잠김 해제
+    $(document).keydown(function (event) {
+        if (event.which == '27') {
+            $(".pop-image1").fadeOut(300);
+            $(".backLayer").fadeOut(1000);
+        }
+    });
+
+    //윈도우가 resize될때마다 backLayer를 조정
+    $(window).resize(function () {
+        var width = $(window).width();
+        var height = $(window).height();
+        $(".backLayer").width(width).height(height);
+    });
+    // -----------------------------------------------------------
+</script>
+
+</html>
