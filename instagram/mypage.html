@@ -25,12 +25,18 @@
                 <li><a href="explore.html">🧭</a></li>
                 <li class="submenu">
                     <a href="#">♡</a>
-                    <div class="dropdown">
-                        <div class="ref-letter"><b>Eagle</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
-                        <div class="ref-letter"><b>Owl</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
-                        <div class="ref-letter"><b>Crow</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
+                    <div class="dropdownmenu">
+                        <div class="ref-letter"><b>Eagle</b> 님이 댓글에서 회원님을 언급했습니다 : <a href="#">@duck</a></div>
+                        <hr class="story-line" />
+                        <div class="ref-letter"><b>Owl</b> 님이 댓글에서 회원님을 언급했습니다 : <a href="#">@duck</a></div>
+                        <hr class="story-line" />
+                        <div class="ref-letter"><b>Crow</b> 님이 댓글에서 회원님을 언급했습니다 : <a href="#">@duck</a></div>
+                    </div>
                 </li>
-                <li><a href="mypage.html"><img src="image/duck.jfif" style="width: 25px;;" height="25px" /></a></li>
+                <li>
+                    <div class="duck-pick"><a href="mypage.html"><img src="image/duck.jfif" style="width: 25px;;"
+                                height="25px" /></a></div>
+                </li>
             </ul>
         </div>
     </section>
@@ -42,16 +48,18 @@
         <div class="my-profile">
             <div class="my-profile-name">
                 <div class="mp-name">Duck</div>
-                <div class="button1"><button class="edit btn btn-secondary">Edit Profile</button></div>
-                <div class="emoti">⚙</div>
+                <div class="button1"><button class="edit btn btn-secondary" data-toggle="modal" data-target="#edit">Edit
+                        Profile</button></div>
+                <div class="emoti"><button type="button" class="btn" data-toggle="modal"
+                        data-target="#feature">⚙</button></div>
             </div>
             <div class="my-profile-posts">
                 <div class="post-letter">6 posts</div>
                 <div class="post-letter">20 followers</div>
                 <div class="post-letter">45 following</div>
             </div>
-            <div class="profile-letter"><b>DJ Duck</b></div>
-            <div class="profile-letter">Photographer</div>
+            <div class="profile-letter" id="nick-name"><b>DJ Duck</b></div>
+            <div class="profile-letter" id="prof">Photographer</div>
             <div class="profile-letter"><a href="#">www.DuckPhot.com</a></div>
         </div>
     </section>
@@ -64,6 +72,58 @@
         <img src="image/image5.jfif" />
         <img src="image/image6.jfif" />
     </section>
+    <div class="modal fade" id="feature">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="modal-1"><a href="#">설정</a></div>
+                    <div class="modal-1"><a href="#">취소</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="modal-1"><button class="btn" data-target="#edit-pf" data-toggle="modal">프로필
+                            수정</button></a></div>
+                    <div class="modal-1"><button class="btn">취소</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit-pf">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <span>이름 : </span><span><input type="text" placeholder=" 수정할 이름을 입력하세요" id="edit-name"></span>
+                    <br />
+                    <span>닉네임 : </span><span><input type="text" placeholder=" 수정할 닉네임을 입력하세요" id="edit-nickname"></span>
+                    <br />
+                    <span>설명 : </span><span><input type="text" placeholder=" 수정할 설명을 입력하세요" id="edit-prof"></span>
+                    <div class="modal-1"><button class="btn-primary" onclick="myEdit()">설정</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myEdit() {
+            var ename = $("#edit-name").val();
+            var enick = $("#edit-nickname").val();
+            var eprof = $("#edit-prof").val();
+
+            $(".mp-name").text(ename);
+            $("#nick-name").text(enick);
+            $("#prof").text(eprof);
+        }
+    </script>
 </body>
 
 </html>

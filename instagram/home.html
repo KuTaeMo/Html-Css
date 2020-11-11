@@ -25,22 +25,29 @@
                 <li><a href="explore.html">🧭</a></li>
                 <li class="submenu">
                     <a href="#">♡</a>
-                    <div class="dropdown">
-                        <div class="ref-letter"><b>Eagle</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
-                        <div class="ref-letter"><b>Owl</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
-                        <div class="ref-letter"><b>Crow</b> 님이 댓글에서 회원님을 언급했습니다:<a href="#">@duck</a></div>
+                    <div class="dropdownmenu">
+                        <div class="ref-letter"><b>Eagle</b> 님이 댓글에서 회원님을 언급했습니다 : <a href="#">@duck</a></div>
+                        <hr class="story-line" />
+                        <div class="ref-letter"><b>Owl</b> 님이 댓글에서 회원님을 언급했습니다 : <a href="#">@duck</a></div>
+                        <hr class="story-line" />
+                        <div class="ref-letter"><b>Crow</b> 님이 댓글에서 회원님을 언급했습니다 : <a href="#">@duck</a></div>
+                    </div>
                 </li>
-                <li><a href="mypage.html"><img src="image/duck.jfif" style="width: 25px;;" height="25px" /></a></li>
+                <li>
+                    <div class="duck-pick"><a href="mypage.html"><img src="image/duck.jfif" style="width: 25px;;"
+                                height="25px" /></a></div>
+                </li>
             </ul>
         </div>
     </section>
+
     <hr class="line" />
     <div class="story">
         <div class="story-box">
-            <div class="story-img" id="story1"><a href="#"><img src="image/image.jfif" /></a></div>
+            <div class="story-img" id="story1"><a href="#"><img src="image/image6.jfif" /></a></div>
             <div class="story-letter">IMAGE1</div>
             <div class="pop-image1">
-                <img src="image/image.jfif" />
+                <img src="image/image6.jfif" />
             </div>
         </div>
         <div class="story-box">
@@ -64,13 +71,13 @@
                 <img src="image/image4.jfif" />
             </div>
         </div>
-        <div class="story-box">
+        <!-- <div class="story-box">
             <div class="story-img" id="story5"><a href="#"><img src="image/image5.jfif" /></a></div>
             <div class="story-letter">IMAGE5</div>
             <div class="pop-image4">
-                <img src="image/image5.jfif" />
+                <img src="image/image7.jfif" />
             </div>
-        </div>
+        </div> -->
     </div>
 
     <hr class="line" />
@@ -84,46 +91,32 @@
                 </div>
                 <div class="setting">
                     <button type="button" class="btn" data-toggle="modal" data-target="#myModal">˚˚˚</button>
-                    <!-- 모달 -->
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <div><a href="#">신고...</a></div>
-                                    <div><a href="#">게시물 알림 설정</a></div>
-                                    <div><a href="#">링크 복사</a></div>
-                                    <div><a href="#">공유하기...</a></div>
-                                    <div><a href="#">팔로우 취소</a></div>
-                                    <div><a href="#">숨기기</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div class="image-section">
-                <img src="image/image.jfif" style="width: 100%;" height="auto" />
+                <img src="image/image3.jfif" style="width: 100%;" height="auto" />
             </div>
             <div class="sns">
                 <div class="emo">
                     <div class="emo-left">
-                        <div class="emoti">❤</div>
-                        <div class="emoti">📢</div>
-                        <div class="emoti">✈</div>
+                        <div class="emoti"><button class="btn">❤</button></div>
+                        <div class="emoti"><button class="btn">📢</button></div>
+                        <div class="emoti"><button type="button" class="btn" data-toggle="modal"
+                                data-target="#myModal3">✈</button></div>
                     </div>
                     <div class="emo-right">
-                        <div class="emoti">📖</div>
+                        <div class="emoti"><button type="button" class="btn" data-toggle="modal"
+                                data-target="#myModal2">📖</button></div>
                     </div>
                 </div>
                 <div class="how-likes letter">395,474 likes</div>
-                <div class="comment-table">
-                    <div class="nick-name">Eagle</div>
-                    <div class="comment">Good!</div>
+                <div class="comment-table1" id="comment-list">
+                    <span class="nick-name">Eagle</span>
+                    <span class="comment" id="comment-1">Good!</span>
                 </div>
-                <div><input class="input-box" type="text" placeholder="댓글을 입력하세요."><button
-                        class="btn btn-primary btn-sm">등록</button>
+                <div class="input-button"><input class="input-box" type="text" placeholder="댓글을 입력하세요."
+                        id="input-comment"><button class="btn btn-primary btn-regi" onclick="addComment()">등록</button>
                 </div>
                 <div class="date">1 DAY AGO</div>
             </div>
@@ -138,51 +131,80 @@
                 </div>
                 <div class="setting">
                     <button type="button" class="btn" data-toggle="modal" data-target="#myModal">˚˚˚</button>
-                    <!-- 모달 -->
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <div><a href="#">신고...</a></div>
-                                    <div><a href="#">게시물 알림 설정</a></div>
-                                    <div><a href="#">링크 복사</a></div>
-                                    <div><a href="#">공유하기...</a></div>
-                                    <div><a href="#">팔로우 취소</a></div>
-                                    <div><a href="#">숨기기</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
             <div class="image-section">
-                <img src="image/image.jfif" style="width: 100%;" height="auto" />
+                <img src="image/image5.jfif" style="width: 100%;" height="auto" />
             </div>
             <div class="sns">
                 <div class="emo">
                     <div class="emo-left">
-                        <div class="emoti">❤</div>
-                        <div class="emoti">📢</div>
-                        <div class="emoti">✈</div>
+                        <div class="emoti"><button class="btn">❤</button></div>
+                        <div class="emoti"><button class="btn">📢</button></div>
+                        <div class="emoti"><button type="button" class="btn" data-toggle="modal"
+                                data-target="#myModal3">✈</button></div>
                     </div>
                     <div class="emo-right">
-                        <div class="emoti">📖</div>
+                        <div class="emoti"><button type="button" class="btn" data-toggle="modal"
+                                data-target="#myModal2">📖</button></div>
+
                     </div>
                 </div>
                 <div class="how-likes letter">395,474 likes</div>
-                <div class="comment-table">
-                    <div class="nick-name">Eagle</div>
-                    <div class="comment">Good!</div>
+                <div class="comment-table1" id="comment-list2">
+                    <span class="nick-name">Eagle</span>
+                    <span class="comment">Good!</span>
                 </div>
-                <div><input class="input-box" type="text" placeholder="댓글을 입력하세요."><button
-                        class="btn btn-primary btn-sm">등록</button></div>
+                <div class="input-button"><input class="input-box" type="text" placeholder="댓글을 입력하세요."
+                        id="input-comment2"><button class="btn btn-primary btn-regi" onclick="addComment2()">등록</button>
+                </div>
                 <div class="date">1 DAY AGO</div>
             </div>
-        </div>
     </main>
     <div class="backLayer" style=""> </div>
+
+    <!-- 모달 -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="modal-1"><a href="#">신고...</a></div>
+                    <div class="modal-1"><a href="#">게시물 알림 설정</a></div>
+                    <div class="modal-1"><a href="#">링크 복사</a></div>
+                    <div class="modal-1"><a href="#">공유하기...</a></div>
+                    <div class="modal-1"><a href="#">팔로우 취소</a></div>
+                    <div class="modal-1"><a href="#">숨기기</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 모달2 -->
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="modal-1"><a href="#">북마크</a></div>
+                    <div class="modal-1"><a href="#">취소</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 모달3 -->
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="modal-1"><a href="#">Direct Message</a></div>
+                    <div class="modal-1"><a href="#">취소</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script>
@@ -196,13 +218,13 @@
             $(".backLayer").width(width);
             $(".backLayer").height(height);
 
-            //화면을 가리는 레이어를 보여준다 (0.5초동안 30%의 농도의 투명도)
-            $(".backLayer").fadeTo(500, 0.4);
+            //화면을 가리는 레이어를 보여준다 (0.5초동안 50%의 농도의 투명도)
+            $(".backLayer").fadeTo(500, 0.5);
 
             //팝업 레이어 보이게
             var loadingDivObj = $(".pop-image1");
-            loadingDivObj.css("top", $(document).height() / 2 - 500);
-            loadingDivObj.css("left", $(document).width() / 2 - $(document).width() / 20);
+            loadingDivObj.css("top", 200);
+            loadingDivObj.css("left", 400);
             loadingDivObj.fadeIn(500);
         });
 
@@ -223,6 +245,32 @@
         $(".backLayer").width(width).height(height);
     });
     // -----------------------------------------------------------
+    function addComment() {
+        var comment = $("#input-comment").val();
+        var no = 2;
+
+        var commentitem = `<div class="comment-table${no}">`;
+        commentitem += `<span class="nick-name">Duck</span>`;
+        commentitem += `<span class="comment" id="comment-${no}">${comment}</span>`;
+        commentitem += `</div>`;
+        $("#comment-list").prepend(commentitem);
+        no = no + 1;
+
+        $("#input-comment").val("");
+    }
+    function addComment2() {
+        var comment = $("#input-comment2").val();
+        var no2 = 2;
+
+        var commentitem = `<div class="comment-table${no2}">`;
+        commentitem += `<span class="nick-name">Duck</span>`;
+        commentitem += `<span class="comment" id="comment-${no2}">${comment}</span>`;
+        commentitem += `</div>`;
+        $("#comment-list2").prepend(commentitem);
+        no2 = no2 + 1;
+
+        $("#input-comment2").val("");
+    }
 </script>
 
 </html>
